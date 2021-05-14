@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'papamano_aoeregular';
+    src: url('~assets/fonts/papamanaoe-webfont.woff2') format('woff2'),
+         url('~assets/fonts/papamanaoe-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-handwrite {
+    font-family: 'papamano_aoeregular';
+}

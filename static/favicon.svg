@@ -1,0 +1,15 @@
+<svg width="149" height="149" viewBox="0 0 149 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .rect {
+      fill: white;
+    }
+    @media (prefers-color-scheme: dark) {
+      .rect {
+        fill: white;
+      }
+    }
+  </style>
+
+<path d="M96 54C110.912 54 123 41.9117 123 27C123 12.0883 110.912 0 96 0C81.0883 0 69 12.0883 69 27C69 41.9117 81.0883 54 96 54Z" fill="#016AFF"/>
+<path class="rect" d="M26 0H57V149H26V0Z" fill="white"/>
+</svg>
