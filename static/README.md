@@ -1,9 +1,5 @@
 # STATIC
 
-Possible feature
-- add dom-to-image and file-saver so the quote post can be converted on-the-fly into image
-
-
 **This directory is not required, you can delete it if you don't want to use it.**
 
 This directory contains your static files.
