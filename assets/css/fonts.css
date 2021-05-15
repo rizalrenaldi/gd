@@ -1,0 +1,35 @@
+@font-face {
+    /* font-family: 'geograph';
+    src: url('/fonts/test-geograph-regular-italic.woff') format('woff')
+         font-weight: 400;
+         font-display: swap;
+         font-style: italic;
+  } */
+@font-face {
+    font-family: 'geograph';
+    src: url('/fonts/test-geograph-regular.woff') format('woff')
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+/* @font-face {
+    font-family: 'signifier-light';
+    src: url('/fonts/test-signifier-light-italic.woff') format('woff')
+         font-weight: 300;
+         font-display: swap;
+         font-style: italic;
+  } */
+@font-face {
+    font-family: 'signifier-light';
+    src: url('/fonts/test-signifier-light.woff') format('woff')
+         font-weight: 300;
+         font-display: swap;
+         font-style: normal;
+  }
+@font-face {
+    font-family: 'signifier';
+    src: url('/fonts/test-signifier-regular.woff') format('woff')
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }

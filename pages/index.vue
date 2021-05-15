@@ -1,6 +1,6 @@
 <template>
-  <div class="py-24 container mx-auto">
-    <h1>Gerard Daniels</h1>
+  <div class="py-24 container text-center mx-auto">
+    <h1> &larr; Main Content &rarr; </h1>
   </div>
 </template>
 

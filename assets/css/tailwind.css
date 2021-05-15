@@ -2,23 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    /* @font-face {
+        font-family: geograph;
+        src: url(~assets/fonts/test-geograph-regular-italic.woff) format('woff');
+             font-weight: 400;
+             font-display: swap;
+             font-style: italic;
+      } */
+    @font-face {
+        font-family: geograph;
+        src: url(~assets/fonts/test-geograph-regular.woff) format('woff');
+             font-weight: 400;
+             font-display: swap;
+             font-style: normal;
+      }
+    @font-face {
+        font-family: geograph-medium;
+        src: url(~assets/fonts/test-geograph-medium.woff) format('woff');
+             font-weight: 500;
+             font-display: swap;
+             font-style: normal;
+      }
+    /* @font-face {
+        font-family: 'signifier-light';
+        src: url('~assets/fonts/test-signifier-light-italic.woff') format('woff');
+             font-weight: 300;
+             font-display: swap;
+             font-style: italic;
+      } */
+    @font-face {
+        font-family: 'signifier-light';
+        src: url('~assets/fonts/test-signifier-light.woff') format('woff');
+             font-weight: 300;
+             font-display: swap;
+             font-style: normal;
+      }
+    @font-face {
+        font-family: 'signifier';
+        src: url('/fonts/test-signifier-regular.woff') format('woff');
+             font-weight: 400;
+             font-display: swap;
+             font-style: normal;
+      }
+}
+
+body {
+    font-family: 'geograph', sans-serif;
+}
+
+.sans-medium {
+    font-family: 'geograph-medium', sans-serif;
+}
 
 h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.01em; 
-    @apply font-heading text-neutral-700;
+    @apply font-serif;
 }
 
 .dark .dark\:prose-dark blockquote, 
 .dark .dark\:prose-dark strong {
-    @apply text-neutral-dark-200
+    @apply text-gd-neutral-dark;
 }
 
 .dark .dark\:prose-dark blockquote {
-    @apply border-neutral-dark-700
+    @apply border-gd-neutral-dark;
 }
 
 .dark .dark\:prose-dark hr {
-    @apply border-neutral-dark-600
+    @apply border-gd-neutral-dark;
 }
 
 .prose .video-wrapper {

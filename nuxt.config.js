@@ -211,21 +211,21 @@ export default {
   // },
   webfontloader: {
     // add Google Fonts as "custom" | workaround required
-    custom: {
-        families: [
-            'Inter:n4,n6,n7,n8',
-            'Playfair Display:n4',
-            'Neue Haas Grotesk Display:n6,n7',
-            'Neue Haas Grotesk Text:n4,n5,n7'
-        ],
-        urls: [
-            // for each Google Fonts add url + options you want
-            // here add font-display option
-            'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap',
-            'https://fonts.googleapis.com/css?family=Playfair+Display&display=swap',
-            'https://use.typekit.net/eok3igd.css'
-        ]
-    }
+    // custom: {
+    //     families: [
+    //         'Inter:n4,n6,n7,n8',
+    //         'Playfair Display:n4',
+    //         'Neue Haas Grotesk Display:n6,n7',
+    //         'Neue Haas Grotesk Text:n4,n5,n7'
+    //     ],
+    //     urls: [
+    //         // for each Google Fonts add url + options you want
+    //         // here add font-display option
+    //         'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap',
+    //         'https://fonts.googleapis.com/css?family=Playfair+Display&display=swap',
+    //         'https://use.typekit.net/eok3igd.css'
+    //     ]
+    // }
   // google: {
   //   families: ['Inter:400,600,700,800'] //Loads Lato font with weights 400 and 700
   // }
