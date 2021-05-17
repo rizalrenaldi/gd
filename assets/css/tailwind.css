@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,18 +12,14 @@
              font-style: italic;
       } */
     @font-face {
-        font-family: geograph;
-        src: url(~assets/fonts/test-geograph-regular.woff) format('woff');
-             font-weight: 400;
-             font-display: swap;
-             font-style: normal;
+        font-family: 'geograph';
+        font-weight: 400;
+        src: url('~assets/fonts/test-geograph-regular.woff') format('woff');
       }
     @font-face {
-        font-family: geograph-medium;
-        src: url(~assets/fonts/test-geograph-medium.woff) format('woff');
-             font-weight: 500;
-             font-display: swap;
-             font-style: normal;
+        font-family: 'geograph-medium';
+        font-weight: 500;
+        src: url('~assets/fonts/test-geograph-medium.woff') format('woff');
       }
     /* @font-face {
         font-family: 'signifier-light';
@@ -33,19 +30,16 @@
       } */
     @font-face {
         font-family: 'signifier-light';
+        font-weight: 300;
         src: url('~assets/fonts/test-signifier-light.woff') format('woff');
-             font-weight: 300;
-             font-display: swap;
-             font-style: normal;
       }
     @font-face {
         font-family: 'signifier';
+        font-weight: 400;
         src: url('/fonts/test-signifier-regular.woff') format('woff');
-             font-weight: 400;
-             font-display: swap;
-             font-style: normal;
       }
 }
+/* @import '~/assets/css/fonts.css'; */
 
 body {
     font-family: 'geograph', sans-serif;
@@ -59,6 +53,47 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.01em; 
     @apply font-serif;
 }
+
+.drag-none{
+    -webkit-user-drag: none;
+  }
+
+
+  .header-hero {
+    height: 400px;
+}
+.swirl-header {
+    width: 120%;
+    opacity: 40%;
+    position: absolute;
+    left: 50%;
+    /* bottom: -140px; */
+    bottom: -140px;
+    transform-origin: center center;
+    transform: rotate(12deg) translateX(-50%);
+}
+
+.blend-overlay {
+    mix-blend-mode: overlay;
+}
+
+@screen md {
+    .header-hero {
+        height: 560px;
+    }
+    .swirl-header {
+        bottom: -280px;
+    }
+}
+@screen lg {
+    .header-hero {
+        height: 640px;
+    }
+    .swirl-header {
+        bottom: -460px;
+    }
+}
+
 
 .dark .dark\:prose-dark blockquote, 
 .dark .dark\:prose-dark strong {

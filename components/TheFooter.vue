@@ -1,7 +1,8 @@
 <template>
-  <div class="bg-gd-yellow-light pb-24 border-b-8 border-brand">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="flex flex-col lg:flex-row items-center py-16 lg:space-x-16">
+  <div class="bg-gd-yellow-light py-32 border-b-8 border-brand relative overflow-hidden">
+      <img :src="require(`~/assets/images/footer.png`)" alt="footerbg" class="footer-bg">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="flex flex-col lg:flex-row items-center pb-24 lg:space-x-16">
             <div class="w-full lg:w-7/12 flex-shrink-0">
                 <p class="text-xl text-center lg:text-left max-w-xl mx-auto lg:max-w-none">Stay ahead in a changing world. Subscribe to Gerard Daniels Insights, our monthly look at the critical thinking behind Executive Search & Leadership.</p>
             </div>
@@ -50,16 +51,17 @@
                </ul>
         </div>
 
-        <div class="flex">
-            <div class="w-1/2">
-            <Logo/>
-            <small class="flex items-baseline mt-3">2021 &copy; Gerard Daniels. All rights reserved. 
-                <NuxtLink to="/" class="mx-1 transition duration-100 hover:text-brand">Privacy Policy</NuxtLink> - 
-                <NuxtLink to="/" class="mx-1 transition duration-100 hover:text-brand">Terms & Conditions</NuxtLink> - 
-                <NuxtLink to="/" class="mx-1 transition duration-100 hover:text-brand">Cookies Policy</NuxtLink> 
-                </small>
+        <div class="flex flex-col lg:flex-row">
+            <div class="w-full md:w-1/2 flex flex-col justify-center">
+            <Logo class="mx-auto md:mx-0"/>
+            <div class="text-sm whitespace-nowrap block lg:flex items-baseline mt-3 text-center md:text-left">
+                <p>2021 &copy; Gerard Daniels. All rights reserved. </p>
+                <NuxtLink to="/" class="whitespace-nowrap lg:mx-1 transition duration-100 hover:text-brand">Privacy Policy</NuxtLink> - 
+                <NuxtLink to="/" class="whitespace-nowrap mx-1 transition duration-100 hover:text-brand">Terms & Conditions</NuxtLink> - 
+                <NuxtLink to="/" class="whitespace-nowrap mx-1 transition duration-100 hover:text-brand">Cookies Policy</NuxtLink> 
             </div>
-            <div class="w-1/2 text-right flex items-end justify-end">
+            </div>
+            <div class="mt-4 lg:mt-0 w-full lg:w-1/2 text-right flex items-start justify-center md:justify-start lg:items-end lg:justify-end">
              <NuxtLink to="/" class="flex items-center text-sm">Follow Us
             <svg class="ml-2" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.625 0.375H1.08984C0.492188 0.375 0 0.902344 0 1.53516V15C0 15.6328 0.492188 16.125 1.08984 16.125H14.625C15.2227 16.125 15.75 15.6328 15.75 15V1.53516C15.75 0.902344 15.2227 0.375 14.625 0.375ZM4.74609 13.875H2.42578V6.38672H4.74609V13.875ZM3.58594 5.33203C2.8125 5.33203 2.21484 4.73438 2.21484 3.99609C2.21484 3.25781 2.8125 2.625 3.58594 2.625C4.32422 2.625 4.92188 3.25781 4.92188 3.99609C4.92188 4.73438 4.32422 5.33203 3.58594 5.33203ZM13.5 13.875H11.1445V10.2188C11.1445 9.375 11.1445 8.25 9.94922 8.25C8.71875 8.25 8.54297 9.19922 8.54297 10.1836V13.875H6.22266V6.38672H8.4375V7.40625H8.47266C8.78906 6.80859 9.5625 6.17578 10.6875 6.17578C13.043 6.17578 13.5 7.75781 13.5 9.76172V13.875Z" fill="#E6A513"/>
@@ -72,7 +74,6 @@
 </template>
 
 <script>
-import Button from "./Button.vue"
 
 export default {
     computed: {
@@ -84,5 +85,16 @@ export default {
 </script>
 
 <style>
-
+.footer-bg {
+    width: 100%;
+    left:50%;
+    transform: scale(2) translateX(-50%);
+    transform-origin: center center;
+    @apply absolute bottom-16 opacity-50 z-0;
+}
+@screen md {
+    .footer-bg {
+    @apply w-full absolute bottom-0 left-0 right-0 transform opacity-80 translate-x-0 scale-100;
+}
+}
 </style>
