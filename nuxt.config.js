@@ -75,7 +75,7 @@ export default {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         hid: 'canonical',
         rel: 'canonical',
