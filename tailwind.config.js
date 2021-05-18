@@ -40,6 +40,7 @@ module.exports = {
         'gd-yellow-light': '#FAF8F4',
         'gd-yellow-dark': '#d69a10',
         'gd-neutral-light': '#a5a5a5',
+        'gd-neutral-medium': '#E8E3D9',
         'gd-neutral-dark': '#3A3228',
         'gd-neutral-darker': '#313131',
 

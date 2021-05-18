@@ -1,10 +1,10 @@
 <template>
  <div>
    <HeroHeader/>
-    <div class="grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12 overflow-hidden pb-1/2 relative">
+    <div class="grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12 overflow-hidden pt-6 md:pt-12 lg:pt-20 pb-1/2 relative">
       <img :src="require(`~/assets/images/map.svg`)" alt="map-bg" class="map-bg">
       <div class="w-full h-full bg-gradient-to-b from-white to-transparent absolute inset-0 opacity-60"></div>
-       <div class="px-6 md:px-0 col-start-1 col-span-full md:col-start-4 md:col-span-6 lg:col-start-6 h-full py-16 relative z-10">
+       <div class="px-6 md:px-0 col-start-1 col-span-full md:col-start-4 md:col-span-6 lg:col-start-6 h-full py-16 relative z-10 md:pr-8 lg:pr-0">
           <h2 class="font-serif text-3xl mb-4 text-brand">Gerard Daniels is an international executive search and board consulting firm</h2>
           <p class="font-sans leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
        </div>
@@ -17,7 +17,7 @@
     </div>
 
     <div class="grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12 service-section relative z-20">
-      <div class="px-6 md:px-0 col-start-1 col-span-full md:col-start-2 md:col-span-7 lg:col-start-3 mb-8">
+      <div class="px-6 md:px-0 col-start-1 col-span-full md:col-start-2 md:col-span-7 lg:col-start-3 mb-8 md:pr-8 lg:pr-0">
           <h3 class="font-sans tracking-widest uppercase text-brand">Our Service</h3>
           <p class="my-4 text-2xl font-serif-light leading-relaxed">Our specialist consultants combine a comprehensive understanding of their sectors with a proven record in senior level executive search and consulting to boards of leading and emerging companies.</p>
       </div>
@@ -93,7 +93,7 @@
 
 @screen xl {
     .map-bg {
-      top: -4%;
+      top: 5%;
       left: 50%;
       transform: translateX(-50%) scale(0.9);
     transform-origin: center center;
