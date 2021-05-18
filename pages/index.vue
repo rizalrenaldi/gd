@@ -1,9 +1,9 @@
 <template>
  <div>
    <HeroHeader/>
-    <div class="grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12 min-h-screen overflow-x-hidden mb-24 relative">
+    <div class="grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12 overflow-hidden pb-1/2 relative">
       <img :src="require(`~/assets/images/map.svg`)" alt="map-bg" class="map-bg">
-      <div class="w-full h-full bg-gradient-to-b from-white to-transparent absolute inset-0 opacity-70"></div>
+      <div class="w-full h-full bg-gradient-to-b from-white to-transparent absolute inset-0 opacity-60"></div>
        <div class="px-6 md:px-0 col-start-1 col-span-full md:col-start-4 md:col-span-6 lg:col-start-6 h-full py-16 relative z-10">
           <h2 class="font-serif text-3xl mb-4 text-brand">Gerard Daniels is an international executive search and board consulting firm</h2>
           <p class="font-sans leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
@@ -15,11 +15,12 @@
          <div class="flex items-center"><p class="w-32">Client served</p> <span class="font-serif text-5xl ml-4 mb-4 text-brand">4</span></div>
        </div>
     </div>
-      <div class="grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12">
-        <div class="px-6 md:px-0 col-start-1 col-span-full md:col-start-2 md:col-span-7 lg:col-start-3 mb-8">
-            <h3 class="font-sans tracking-widest uppercase text-brand">Our Service</h3>
-            <p class="my-4 text-2xl font-serif-light leading-relaxed">Our specialist consultants combine a comprehensive understanding of their sectors with a proven record in senior level executive search and consulting to boards of leading and emerging companies.</p>
-        </div>
+
+    <div class="grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12 service-section relative z-20">
+      <div class="px-6 md:px-0 col-start-1 col-span-full md:col-start-2 md:col-span-7 lg:col-start-3 mb-8">
+          <h3 class="font-sans tracking-widest uppercase text-brand">Our Service</h3>
+          <p class="my-4 text-2xl font-serif-light leading-relaxed">Our specialist consultants combine a comprehensive understanding of their sectors with a proven record in senior level executive search and consulting to boards of leading and emerging companies.</p>
+      </div>
 
       </div>
     <TheSlider/>
@@ -34,7 +35,7 @@
           <img :src="require(`~/assets/images/sector3.jpeg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
             <div class="h-full grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12">
               <div class="px-6 col-start-1 lg:col-start-3 col-span-4 relative h-full flex flex-col justify-between py-16">
-                <p class="text-base md:text-lg uppercase tracking-widest text-brand">Featured Posts</p>
+                <p class="uppercase tracking-widest text-brand">Featured Posts</p>
                 <div class="relative z-10">
                   <h2 class="font-serif-light text-3xl mb-2 text-white">Gerard Daniels appoints Fugro UK Country Director</h2>
                   <NuxtLink to="/" class="transition duration-200 group select-none font-sans text-lg whitespace-nowrap flex items-center opacity-70 hover:opacity-100 text-brand">Read more
@@ -61,17 +62,42 @@
 .post-section {
   height: 470px;
 }
+.service-section {
+  margin-top: -42%;
+}
 .map-bg {
     width: 100%;
-    left:50%;
-    transform: scale(2) translateX(-50%);
+    left: 50%;
+    top: 35%;
+    transform: translateX(-50%) scale(1.5);
     transform-origin: center center;
-    @apply absolute bottom-16 opacity-30;
+    @apply absolute opacity-100;
 }
 
+@screen sm {
+    .map-bg {
+      top: 30%;
+  }
+}
 @screen md {
     .map-bg {
-      @apply w-full absolute bottom-0 left-0 right-0 transform opacity-80 translate-x-0 scale-100;
+      top: 5%;
+  }
+}
+
+@screen lg {
+    .map-bg {
+      @apply w-full absolute bottom-8 left-0 right-0 transform opacity-80 translate-x-0 scale-100;
+  }
+}
+
+@screen xl {
+    .map-bg {
+      top: -4%;
+      left: 50%;
+      transform: translateX(-50%) scale(0.9);
+    transform-origin: center center;
+    @apply absolute opacity-100;
   }
 }
 </style>

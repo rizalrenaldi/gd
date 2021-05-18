@@ -55,7 +55,7 @@
             <div class="w-full md:w-1/2 flex flex-col justify-center">
             <Logo class="mx-auto md:mx-0"/>
             <div class="text-sm whitespace-nowrap block lg:flex items-baseline mt-3 text-center md:text-left">
-                <p>2021 &copy; Gerard Daniels. All rights reserved. </p>
+                <p>{{printYear}} &copy; Gerard Daniels. All rights reserved. </p>
                 <NuxtLink to="/" class="whitespace-nowrap lg:mx-1 transition duration-100 hover:text-brand">Privacy Policy</NuxtLink> - 
                 <NuxtLink to="/" class="whitespace-nowrap mx-1 transition duration-100 hover:text-brand">Terms & Conditions</NuxtLink> - 
                 <NuxtLink to="/" class="whitespace-nowrap mx-1 transition duration-100 hover:text-brand">Cookies Policy</NuxtLink> 

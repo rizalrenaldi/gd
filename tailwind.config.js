@@ -27,6 +27,9 @@ module.exports = {
       letterSpacing: {
         serif: '-0.015em'
       },
+      boxShadow: {
+        'gd': '1px 1px 4px 0 rgba(0, 0, 0, 0.19)'
+      },
       colors: {
         brand: "hsl(42, 85%, 49%)",
         'brand-dark': "hsl(42, 85%, 40%)",
@@ -35,6 +38,7 @@ module.exports = {
         gray: colors.trueGray,
         'gd-yellow': '#E7A613',
         'gd-yellow-light': '#FAF8F4',
+        'gd-yellow-dark': '#d69a10',
         'gd-neutral-light': '#a5a5a5',
         'gd-neutral-dark': '#3A3228',
         'gd-neutral-darker': '#313131',

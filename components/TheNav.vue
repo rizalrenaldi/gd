@@ -24,7 +24,7 @@
           </svg>
           
           <transition name="fade">
-          <div v-if="dropdownDo" class="dropdown font-sans text-sm px-8 py-4 bg-white rounded-lg shadow-lg absolute z-20">
+          <div v-if="dropdownDo" class="dropdown font-sans text-sm px-8 py-4 bg-white rounded-lg shadow-gd absolute z-20">
             <ul class=""> 
               <li class="my-4"><NuxtLink to="/" @click="dropdownDo = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Executive Search</NuxtLink></li>
               <li class="my-4"><NuxtLink to="/" @click="dropdownDo = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Chair and Non-Executive Director Search</NuxtLink></li>
@@ -44,7 +44,7 @@
           </svg>
 
           <transition name="fade">
-          <div v-if="dropdownSectors" class="dropdown font-sans text-sm px-8 py-4 bg-white rounded-lg shadow-lg absolute z-20">
+          <div v-if="dropdownSectors" class="dropdown font-sans text-sm px-8 py-4 bg-white rounded-lg shadow-gd absolute z-20">
             <ul class=""> 
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Mining & Metals</NuxtLink></li>
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Energy, Oil & Gas</NuxtLink></li>
@@ -65,7 +65,7 @@
           </svg>
 
           <transition name="fade">
-          <div v-if="dropdownOperates" class="dropdown font-sans text-sm px-8 py-6 bg-white rounded-lg shadow-lg absolute z-20">
+          <div v-if="dropdownOperates" class="dropdown font-sans text-sm px-8 py-6 bg-white rounded-lg shadow-gd absolute z-20">
             <ul class="mb-4"> 
               <li class="text-brand mb-1">Asia Pacific</li>
               <li class="my-1"><NuxtLink to="/" @click="dropdownOperates = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Sydney</NuxtLink></li>
@@ -92,7 +92,7 @@
         </svg>
 
           <transition name="fade">
-        <div v-if="dropdownAbout" class="dropdown dropdown-about font-sans text-sm px-8 py-4 bg-white rounded-lg shadow-lg absolute z-20">
+        <div v-if="dropdownAbout" class="dropdown dropdown-about font-sans text-sm px-8 py-4 bg-white rounded-lg shadow-gd absolute z-20">
           <ul class=""> 
             <li class="my-4"><NuxtLink to="/" @click="dropdownAbout = false" class="transition duration-100 cursor-pointer leading-normal text-gd-neutral-dark hover:text-brand">About Us</NuxtLink></li>
             <li class="my-4"><NuxtLink to="/" @click="dropdownAbout = false" class="transition duration-100 cursor-pointer leading-normal text-gd-neutral-dark hover:text-brand">Our Value</NuxtLink></li>
