@@ -25,7 +25,7 @@
     </div>
 </div>
 <div class="w-screen header-hero relative">
-    <div class="w-full h-full relative flex items-end overflow-hiddens drag-none">
+    <div class="w-full h-full relative flex items-end drag-none">
          <div class="h-full grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12 relative z-20">
             <div class="pr-8 col-start-3 col-span-full md:col-start-4 md:col-span-5 lg:col-start-6 h-full pt-1/6 relative z-10 text-white">
                 <h2 class="font-serif-light text-4xl md:text-7xl mb-2">Inspires leadership excellence</h2>
