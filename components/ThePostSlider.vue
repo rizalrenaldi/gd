@@ -3,81 +3,81 @@
     <div class="grid grid-cols-12">
         <div class="col-start-1 lg:col-start-1 col-span-full relative">
             <client-only>
-                <vue-tiny-slider v-bind="tinySliderOptions" id="services" class="flex">
+                <vue-tiny-slider v-bind="tinySliderOptions" id="post" class="flex">
                     <div class="w-1/2 h-80 p-2">
                         <NuxtLink to="/" class="group slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/service1.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
+                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Future-proofing remuneration strategies in the mining sector</h3>
+                            <img :src="require(`~/assets/images/post1.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
                             <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
                         </NuxtLink>
                     </div>
                     <div class="w-1/2 h-80 p-2">
                         <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Chair and non-executive director search</h3>
-                            <img :src="require(`~/assets/images/service2.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
+                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">How to prepare for your first CFO role</h3>
+                            <img :src="require(`~/assets/images/post2.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
                             <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
                         </NuxtLink>
                     </div>
                     <div class="w-1/2 h-80 p-2">
                         <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Succesion Planning and Internal Candidate Assessment</h3>
-                            <img :src="require(`~/assets/images/service3.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
+                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Helping to smooth the transition into new executive roles</h3>
+                            <img :src="require(`~/assets/images/post3.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
                             <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
                         </NuxtLink>
                     </div>
                     <div class="w-1/2 h-80 p-2">
                         <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/service1.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
+                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Gerard Daniels celebrates a significant milestone this month</h3>
+                            <img :src="require(`~/assets/images/post4.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
                             <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
                         </NuxtLink>
                     </div>
                     <div class="w-1/2 h-80 p-2">
                         <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/service2.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
+                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Building the talent pool for 2021</h3>
+                            <img :src="require(`~/assets/images/post5.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
                             <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
                         </NuxtLink>
                     </div>
                     <div class="w-1/2 h-80 p-2">
                         <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/service3.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
+                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Helping to smooth the transition into new executive roles</h3>
+                            <img :src="require(`~/assets/images/post1.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
                             <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
                         </NuxtLink>
                     </div>
                     <div class="w-1/2 h-80 p-2">
                         <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/service1.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
+                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">How to prepare for your first CFO role</h3>
+                            <img :src="require(`~/assets/images/post2.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
                             <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
                         </NuxtLink>
                     </div>
                     <div class="w-1/2 h-80 p-2">
                         <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/service2.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
+                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Future-proofing remuneration strategies in the mining sector</h3>
+                            <img :src="require(`~/assets/images/post3.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
                             <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
                         </NuxtLink>
                     </div>
                     <div class="w-1/2 h-80 p-2">
                         <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/service3.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
+                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Building the talent pool for 2021</h3>
+                            <img :src="require(`~/assets/images/post4.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
                             <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
                         </NuxtLink>
                     </div>
                     <div class="w-1/2 h-80 p-2">
                         <NuxtLink to="/" class="slider-box bg-white drag-none">
                             <!-- <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/sector3.jpeg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
+                            <img :src="require(`~/assets/images/post3.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
                             <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div> -->
                         </NuxtLink>
                     </div>
                     
                 </vue-tiny-slider>
                 <div class="grid grid-cols-12 items-center my-6">
-                    <ul id="services-controls" class="services-controls col-start-1 flex items-center px-2">
+                    <ul id="post-controls" class="post-controls col-start-1 flex items-center px-2">
                         <li><BtnArrowLeft/></li>
                         <li><BtnArrowRight/></li>
                         <!-- <li class="transition duration-200 flex-shrink-0 mr-1 button-control bg-gd-yellow-light hover:bg-gd-yellow text-gd-neutral-dark text-opacity-30 hover:text-opacity-100 prev">
@@ -109,8 +109,7 @@ export default {
     data() {
         return {
             tinySliderOptions: {
-                "container": "services",
-                "controlsContainer": "#services-controls",
+                "controlsContainer": "#post-controls",
                 "mouseDrag": true,
                 "items": 1,
                 "center": false,
@@ -138,7 +137,7 @@ export default {
 </script>
 
 <style>
-/* #services {
+/* #post {
     transform: translate3d(7.14286%, 0px, 0px)!important;
 } */
 
@@ -149,28 +148,28 @@ export default {
     @apply cursor-pointer w-10 h-10 rounded-md flex items-center justify-center;
 }
 
- #services-iw {
+ #post-iw {
         margin: 0 calc(100vw / 6)!important;
     }
-    .services-controls {
+    .post-controls {
         margin-left: calc(100vw / 6);
     }
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-   #services-iw {
+   #post-iw {
         margin: 0 calc(100vw / 8)!important;
     }
-    .services-controls {
+    .post-controls {
         margin-left: calc(100vw / 8);
     }
 }
 
 @media screen and (min-width: 1024px) {
-     #services-iw {
+     #post-iw {
         margin: 0 calc(100vw / 6)!important;
     }
-    .services-controls {
+    .post-controls {
         margin-left: calc(100vw / 6);
     }
 }
