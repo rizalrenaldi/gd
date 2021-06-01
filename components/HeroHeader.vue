@@ -38,14 +38,14 @@
                 </NuxtLink>
             </div>
         </div>
-        <VImg src="header.png" alt="header" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center" />
-        <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
+        <VImg src="post1.jpg" alt="header" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center" />
+        <div class="w-full h-full bg-black bg-opacity-40 absolute inset-0 z-0"></div>
     </div>
 </div>
 <div class="w-screen header-hero relative">
     <div class="w-full h-full relative flex items-end overflow-hiddens drag-none">
          <div class="h-full grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12 relative z-20">
-            <div class="pr-8 col-start-3 col-span-full md:col-start-4 md:col-span-5 lg:col-start-6 h-full pt-1/6 relative z-10 text-white">
+            <div class="pr-8 col-start-2 col-span-full md:col-start-2 md:col-span-5 lg:col-start-3 h-full pt-1/6 relative z-10 text-white">
                 <h2 class="font-serif-light text-4xl md:text-7xl mb-2">Inspires leadership excellence</h2>
                 <p class="text-base md:text-lg">Gerard Daniels searches for executive game breakers whilst keeping an eye on emerging leaders.</p>
                 <NuxtLink to="/" class="mt-6 px-4 py-3 bg-brand text-white rounded-md inline-flex items-center">
@@ -56,7 +56,7 @@
                 </NuxtLink>
             </div>
         </div>
-        <VImg src="header.png" alt="header" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center" />
+        <VImg src="featured-post.jpg" alt="header" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center" />
         <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
     </div>
 </div>
@@ -92,7 +92,7 @@
             </client-only>
 
           <!-- <div class="w-full h-full absolute inset-0 z-0 bg-gradient-to-t from-black to-transparent opacity-60"></div> -->
-        <!-- <Swirl/> -->
+        <Swirl/>
 
         
       </div>
@@ -126,8 +126,11 @@
                 "controlsContainer": "#hero-controls",
                 "items": 1,
                 "mouseDrag": true,
-                "nav": false
-
+                "nav": false,
+                "autoplay": true,
+                "autoplayTimeout": 6000,
+                "speed": 800,
+                "autoplayButtonOutput": false
             }
         }
     },
