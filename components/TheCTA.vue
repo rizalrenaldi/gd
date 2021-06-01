@@ -6,7 +6,7 @@
       <div class="max-w-7xl mx-auto h-full px-12 lg:px-6 my-16 md:my-32 flex flex-col md:flex-row md:items-center justify-start gap-20 relative z-10">
 
            <div class="w-full md:w-1/2 pb-16 md:pr-8 md:pb-0 flex flex-col justify-center border-b md:border-r md:border-b-0 border-white border-opacity-50">
-                <h2 class="font-serif text-4xl mb-4 text-white">Discuss your executive search and board consulting needs with our experienced team.</h2>
+                <h2 class="font-serif-light text-4xl mb-4 text-white">Discuss your executive search and board consulting needs with our experienced team.</h2>
                 <NuxtLink to="/" class="transition duration-200 group select-none font-sans text-lg whitespace-nowrap flex items-center opacity-70 hover:opacity-100">Select your region
                     <svg class="transition duration-200 transform group-hover:translate-x-1 mt-1 ml-2 w-1.5" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.818181 15.8644L0.106719 15.1774C-0.0355731 14.9966 -0.0355731 14.7073 0.106719 14.5627L6.54545 8.01808L0.106722 1.43729C-0.0355708 1.29266 -0.0355707 1.00339 0.106722 0.822599L0.818184 0.135593C0.99605 -0.0451978 1.24506 -0.0451977 1.42293 0.135593L8.89328 7.69266C9.03557 7.87345 9.03557 8.12656 8.89328 8.30735L1.42292 15.8644C1.24506 16.0452 0.996047 16.0452 0.818181 15.8644Z" fill="#3A3228"/>
@@ -15,7 +15,7 @@
             </div>
 
             <div class="w-full md:w-1/2 pt-0 md:pl-8 flex flex-col justify-center">
-                <h2 class="font-serif text-4xl mb-4 text-white">Advance your leadership potential and career pathways via our consulting team.</h2>
+                <h2 class="font-serif-light text-4xl mb-4 text-white">Advance your leadership potential and career pathways via our consulting team.</h2>
                 <NuxtLink to="/" class="transition duration-200 group select-none font-sans text-lg whitespace-nowrap flex items-center opacity-70 hover:opacity-100">Select your region
                     <svg class="transition duration-200 transform group-hover:translate-x-1 mt-1 ml-2 w-1.5" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.818181 15.8644L0.106719 15.1774C-0.0355731 14.9966 -0.0355731 14.7073 0.106719 14.5627L6.54545 8.01808L0.106722 1.43729C-0.0355708 1.29266 -0.0355707 1.00339 0.106722 0.822599L0.818184 0.135593C0.99605 -0.0451978 1.24506 -0.0451977 1.42293 0.135593L8.89328 7.69266C9.03557 7.87345 9.03557 8.12656 8.89328 8.30735L1.42292 15.8644C1.24506 16.0452 0.996047 16.0452 0.818181 15.8644Z" fill="#3A3228"/>

@@ -4,74 +4,11 @@
         <div class="col-start-1 lg:col-start-1 col-span-full relative">
             <client-only>
                 <vue-tiny-slider v-bind="tinySliderOptions" id="services" class="flex">
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="group slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/service1.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
+                    <div v-for="service in services" :key="service.id" class="w-1/2 h-80 p-2">
+                        <NuxtLink :to="service.link" class="group slider-box drag-none">
+                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">{{service.title}}</h3>
+                            <img :src="require(`~/assets/images/${service.image}`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
                             <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Chair and non-executive director search</h3>
-                            <img :src="require(`~/assets/images/service2.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Succesion Planning and Internal Candidate Assessment</h3>
-                            <img :src="require(`~/assets/images/service3.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/service1.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/service2.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/service3.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/service1.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/service2.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/service3.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box bg-white drag-none">
-                            <!-- <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/sector3.jpeg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div> -->
                         </NuxtLink>
                     </div>
                     
@@ -108,6 +45,53 @@
 export default {
     data() {
         return {
+            services: [
+                {
+                    "title": "Executive Search",
+                    "image": "service1.jpg",
+                    "link": "/" 
+                },
+                {
+                    "title": "Chair and Non-Executive Director Search",
+                    "image": "service2.jpg",
+                    "link": "/" 
+                },
+                {
+                    "title": "Market Mapping and Talent Identification",
+                    "image": "service3.jpg",
+                    "link": "/" 
+                },
+                {
+                    "title": "Executive Performance Assessment",
+                    "image": "service1.jpg",
+                    "link": "/" 
+                },
+                {
+                    "title": "Succession Planning and Internal Candidate Assessment – CEOs and Other Executives",
+                    "image": "service2.jpg",
+                    "link": "/" 
+                },
+                {
+                    "title": "Board Assessment and Composition",
+                    "image": "service3.jpg",
+                    "link": "/" 
+                },
+                {
+                    "title": "Talent and Organisational Structure Design",
+                    "image": "service1.jpg",
+                    "link": "/" 
+                },
+                {
+                    "title": "Remuneration Design and Governance",
+                    "image": "service2.jpg",
+                    "link": "/" 
+                },
+                {
+                    "title": "Workforce Planning",
+                    "image": "service3.jpg",
+                    "link": "/" 
+                },
+            ],
             tinySliderOptions: {
                 "container": "services",
                 "controlsContainer": "#services-controls",

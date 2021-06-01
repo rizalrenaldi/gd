@@ -59,9 +59,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 
-  .header-hero {
-    height: 400px;
-}
+
 .swirl-header {
     width: 120%;
     opacity: 40%;
@@ -77,6 +75,10 @@ h1, h2, h3, h4, h5, h6 {
     mix-blend-mode: overlay;
 }
 
+.header-hero {
+    height: 80vh;
+}
+/* 
 @screen md {
     .header-hero {
         height: 560px;
@@ -92,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
     .swirl-header {
         bottom: -460px;
     }
-}
+} */
 
 
 .dark .dark\:prose-dark blockquote, 

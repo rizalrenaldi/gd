@@ -4,14 +4,14 @@
         <div class="col-start-1 lg:col-start-1 col-span-full relative">
             <client-only>
                 <vue-tiny-slider v-bind="tinySliderOptions" id="post" class="flex">
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="group slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Future-proofing remuneration strategies in the mining sector</h3>
-                            <img :src="require(`~/assets/images/post1.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
+                    <div v-for="post in posts" :key="post.id" class="w-1/2 h-80 p-2">
+                        <NuxtLink :to="post.link" class="group slider-box drag-none">
+                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">{{post.title}}</h3>
+                            <img :src="require(`~/assets/images/${post.image}`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
                             <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
                         </NuxtLink>
                     </div>
-                    <div class="w-1/2 h-80 p-2">
+                    <!-- <div class="w-1/2 h-80 p-2">
                         <NuxtLink to="/" class="slider-box drag-none">
                             <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">How to prepare for your first CFO role</h3>
                             <img :src="require(`~/assets/images/post2.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
@@ -66,9 +66,9 @@
                             <img :src="require(`~/assets/images/post4.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
                             <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
                         </NuxtLink>
-                    </div>
+                    </div> -->
                     <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box bg-white drag-none">
+                        <NuxtLink to="/" class="slider-boxs bg-white drag-none">
                             <!-- <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
                             <img :src="require(`~/assets/images/post3.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
                             <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div> -->
@@ -108,6 +108,48 @@
 export default {
     data() {
         return {
+            posts: [
+                {
+                    "title": "Improving leadership health and wellbeing",
+                    "link": "/",
+                    "image": "post1.jpg"
+                },
+                {
+                    "title": "Future-proofing remuneration strategies in the mining sector",
+                    "link": "/",
+                    "image": "post2.jpg"
+                },
+                {
+                    "title": "How to prepare for your first CFO role",
+                    "link": "/",
+                    "image": "post3.jpg"
+                },
+                {
+                    "title": "Helping to smooth the transition into new executive roles",
+                    "link": "/",
+                    "image": "post4.jpg"
+                },
+                {
+                    "title": "Gerard Daniels celebrates a significant milestone this month",
+                    "link": "/",
+                    "image": "post5.jpg"
+                },
+                {
+                    "title": "Driving performance in remote working teams",
+                    "link": "/",
+                    "image": "post1.jpg"
+                },
+                {
+                    "title": "What does good crisis leadership look like?",
+                    "link": "/",
+                    "image": "post2.jpg"
+                },
+                {
+                    "title": "Gerard Daniels appoints Fugro UK Country Director",
+                    "link": "/",
+                    "image": "post3.jpg"
+                }
+            ],
             tinySliderOptions: {
                 "controlsContainer": "#post-controls",
                 "mouseDrag": true,

@@ -5,14 +5,14 @@
       <img :src="require(`~/assets/images/map.svg`)" alt="map-bg" class="map-bg">
       <!-- <div class="w-full h-full bg-gradient-to-b from-white to-transparent absolute inset-0 opacity-60"></div> -->
        <div class="px-6 md:px-0 col-start-1 col-span-full md:col-start-4 md:col-span-6 lg:col-start-6 h-full py-16 relative z-10 md:pr-8 lg:pr-0">
-          <h2 data-aos="fade-up" data-aos-duration="1200" class="font-serif text-3xl mb-4 text-brand">Gerard Daniels specialise in Executive Search and Board Consulting throughout Asia Pacific, Europe, Middle East & Africa and The Americas</h2>
-          <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="50" class="font-sans leading-relaxed">Delivering up-to-date market insight with access to unique perspectives, Gerard Daniels offers a refreshingly collaborative, reliable and personal service to clients.  We are values-based, energetic and highly creative, able to take a perspective on new possibilities and ideas.</p>
+          <h2 data-aos="fade-up" data-aos-duration="1200" class="font-serif-light text-3xl mb-4 text-brand">Gerard Daniels specialise in Executive Search and Board Consulting throughout Asia Pacific, Europe, Middle East & Africa and The Americas</h2>
+          <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="50" class="font-sans text-lg leading-relaxed">Delivering up-to-date market insight with access to unique perspectives, Gerard Daniels offers a refreshingly collaborative, reliable and personal service to clients.  We are values-based, energetic and highly creative, able to take a perspective on new possibilities and ideas.</p>
        </div>
        <div class="px-6 md:px-0 col-start-1 md:col-start-2 lg:col-start-3 col-span-4 relative z-10 h-full flex flex-col justify-between pb-16">
-         <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="50" class="flex items-center"><p class="w-32">Founded in</p> <span class="font-serif text-5xl ml-4 mb-4 text-brand">1986</span></div>
-         <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="60" class="flex items-center"><p class="w-32">Placements</p> <span class="font-serif text-5xl ml-4 mb-4 text-brand">30,123</span></div>
-         <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="70" class="flex items-center"><p class="w-32">Regions</p> <span class="font-serif text-5xl ml-4 mb-4 text-brand">4</span></div>
-         <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="80" class="flex items-center"><p class="w-32">Client served</p> <span class="font-serif text-5xl ml-4 mb-4 text-brand">4,432</span></div>
+         <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="50" class="flex items-center"><p class="w-32">Founded in</p> <span class="font-serif-light text-5xl ml-4 mb-4 text-brand">1986</span></div>
+         <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="60" class="flex items-center"><p class="w-32">Placements</p> <span class="font-serif-light text-5xl ml-4 mb-4 text-brand">30,123</span></div>
+         <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="70" class="flex items-center"><p class="w-32">Regions</p> <span class="font-serif-light text-5xl ml-4 mb-4 text-brand">4</span></div>
+         <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="80" class="flex items-center"><p class="w-32">Client served</p> <span class="font-serif-light text-5xl ml-4 mb-4 text-brand">4,432</span></div>
        </div>
     </div>
 
@@ -26,7 +26,7 @@
     <TheSlider/>
       <div data-aos="fade-up" data-aos-duration="1200" data-aos-offset="300" class="grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12">
         <div class="px-6 md:px-0 col-start-1 col-span-full md:col-start-2 md:col-span-6 lg:col-start-3 my-32">
-          <h2 class="font-serif text-4xl mb-4 text-brand">"Although we had always operated internationally out of Perth, in the early 2000s it became clear that there was opportunity beyond the Asia Pacific region"</h2>
+          <h2 class="font-serif-light text-4xl mb-4 text-brand">"Although we had always operated internationally out of Perth, in the early 2000s it became clear that there was opportunity beyond the Asia Pacific region"</h2>
           <p class="font-sans text-gd-neutral-light">Michael and Lloyd, Founders & Directors</p>
         </div>
       </div>
