@@ -34,9 +34,9 @@
         src: url('~assets/fonts/test-signifier-light.woff') format('woff');
       }
     @font-face {
-        font-family: 'signifier';
+        font-family: 'signifier-regular';
         font-weight: 400;
-        src: url('/fonts/test-signifier-regular.woff') format('woff');
+        src: url('~assets/fonts/test-signifier-regular.woff') format('woff');
       }
 }
 /* @import '~/assets/css/fonts.css'; */
@@ -49,16 +49,24 @@ body {
     font-family: 'geograph-medium', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    letter-spacing: -0.01em; 
-    @apply font-serif;
+/* .signifier-light {
+    font-family: 'signifier-light'
 }
+.signifier-regular {
+    font-family: 'signifier-regular'
+} */
+
+/* h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.01em; 
+} */
 
 .drag-none{
     -webkit-user-drag: none;
   }
 
-
+.overlay-card {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
+}
 
 .swirl-header {
     width: 120%;
@@ -69,6 +77,10 @@ h1, h2, h3, h4, h5, h6 {
     bottom: -140px;
     transform-origin: center center;
     transform: rotate(12deg) translateX(-50%);
+}
+
+.slider-box {
+    @apply relative p-8 rounded-lg transform transition duration-200 flex items-end justify-start w-full h-full overflow-hidden hover:-translate-y-2 hover:shadow-xl;
 }
 
 .blend-overlay {
@@ -95,55 +107,6 @@ h1, h2, h3, h4, h5, h6 {
         bottom: -460px;
     }
 } */
-
-
-.dark .dark\:prose-dark blockquote, 
-.dark .dark\:prose-dark strong {
-    @apply text-gd-neutral-dark;
-}
-
-.dark .dark\:prose-dark blockquote {
-    @apply border-gd-neutral-dark;
-}
-
-.dark .dark\:prose-dark hr {
-    @apply border-gd-neutral-dark;
-}
-
-.prose .video-wrapper {
-    @apply rounded-none my-12;
-}
-
-.prose .video-wrapper,
-.prose img {
-    max-width: 110%;
-    margin-left: -5%;
-    margin-right: -5%;
-    @apply rounded-xl;
-}
-
-@screen sm {
-    .prose .video-wrapper {
-        @apply rounded-xl;
-    }
-}
-
-@screen md {
-    .prose .video-wrapper,
-    .prose img {
-        max-width: 120%;
-        margin-left: -10%;
-        margin-right: -10%;
-    }
-
-    .prose .video-wrapper {
-        @apply rounded-xl;
-    }
-}
-
-.overside {
-    @apply -mx-16 font-serif text-4xl leading-normal;
-}
 
 /* .prose em {
     @apply px-2 py-1 bg-neutral-100 rounded text-neutral-600;
@@ -231,17 +194,4 @@ blockquote code {
     }
 }
 
-.video-wrapper {
-    position: relative;
-    padding-bottom: 65.25%;
-    height: 0;
-    overflow: hidden;
-  }
-  .video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
 

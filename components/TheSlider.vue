@@ -6,9 +6,9 @@
                 <vue-tiny-slider v-bind="tinySliderOptions" id="services" class="flex">
                     <div v-for="service in services" :key="service.id" class="w-1/2 h-80 p-2">
                         <NuxtLink :to="service.link" class="group slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">{{service.title}}</h3>
+                            <h3 class="relative z-10 font-sans text-white uppercase text-sm tracking-wider">{{service.title}}</h3>
                             <img :src="require(`~/assets/images/${service.image}`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
+                            <div class="w-full h-full overlay-card absolute inset-0 z-0"></div>
                         </NuxtLink>
                     </div>
                     
@@ -126,38 +126,6 @@ export default {
     transform: translate3d(7.14286%, 0px, 0px)!important;
 } */
 
-.slider-box {
-    @apply relative p-8 rounded-lg transform transition duration-200 flex items-end justify-start w-full h-full overflow-hidden hover:-translate-y-2 hover:shadow-xl uppercase;
-}
-.button-control {
-    @apply cursor-pointer w-10 h-10 rounded-md flex items-center justify-center;
-}
-
- #services-iw {
-        margin: 0 calc(100vw / 6)!important;
-    }
-    .services-controls {
-        margin-left: calc(100vw / 6);
-    }
-
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-   #services-iw {
-        margin: 0 calc(100vw / 8)!important;
-    }
-    .services-controls {
-        margin-left: calc(100vw / 8);
-    }
-}
-
-@media screen and (min-width: 1024px) {
-     #services-iw {
-        margin: 0 calc(100vw / 6)!important;
-    }
-    .services-controls {
-        margin-left: calc(100vw / 6);
-    }
-}
 
 .tns-outer {
     overflow-x: hidden;
@@ -190,4 +158,36 @@ button.tns-nav-active {
 .tns-liveregion {
     display: none;
 }
+
+
+.button-control {
+    @apply cursor-pointer w-10 h-10 rounded-md flex items-center justify-center;
+}
+
+ #services-iw {
+        margin: 0 calc(100vw / 6)!important;
+    }
+    .services-controls {
+        margin-left: calc(100vw / 6);
+    }
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   #services-iw {
+        margin: 0 calc(100vw / 8)!important;
+    }
+    .services-controls {
+        margin-left: calc(100vw / 8);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+     #services-iw {
+        margin: 0 calc(100vw / 6)!important;
+    }
+    .services-controls {
+        margin-left: calc(100vw / 6);
+    }
+}
+
 </style>

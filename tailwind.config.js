@@ -20,7 +20,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['geograph'],
-      serif: ['signifier, serif'],
+      serif: ['"signifier-regular"'],
       'serif-light': ['signifier-light, serif'],
     },
     extend: {

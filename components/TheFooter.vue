@@ -13,7 +13,7 @@
         </div>
         <div class="flex items-start justify-center flex-wrap lg:flex-nowrap border-t py-16 text-sm -mx-4 lg:gap-6">
                <ul class="w-1/2 lg:w-1/6 p-6 lg:p-0">
-                   <li class="text-brand sans-medium uppercase">Company</li>
+                   <li class="text-brand font-sans uppercase">Company</li>
                    <li class="my-4"><NuxtLink to="/" class="transition duration-100 cursor-pointer leading-normal text-gd-neutral-dark hover:text-brand">About Us</NuxtLink></li>
                     <li class="my-4"><NuxtLink to="/" class="transition duration-100 cursor-pointer leading-normal text-gd-neutral-dark hover:text-brand">Our Value</NuxtLink></li>
                     <li class="my-4"><NuxtLink to="/" class="transition duration-100 cursor-pointer leading-normal text-gd-neutral-dark hover:text-brand">Our Team</NuxtLink></li>
@@ -22,14 +22,14 @@
                     <li class="my-4"><NuxtLink to="/" class="transition duration-100 cursor-pointer leading-normal text-gd-neutral-dark hover:text-brand">Recent Assignment</NuxtLink></li>
                </ul>
                <ul class="w-1/2 lg:w-1/6 p-6 lg:p-0">
-                   <li class="text-brand sans-medium uppercase">Locations</li>
+                   <li class="text-brand font-sans uppercase">Locations</li>
                    <li class="my-4"><NuxtLink to="/" class="transition duration-100 cursor-pointer leading-normal text-gd-neutral-dark hover:text-brand">Perth</NuxtLink></li>
                     <li class="my-4"><NuxtLink to="/" class="transition duration-100 cursor-pointer leading-normal text-gd-neutral-dark hover:text-brand">Sydney</NuxtLink></li>
                     <li class="my-4"><NuxtLink to="/" class="transition duration-100 cursor-pointer leading-normal text-gd-neutral-dark hover:text-brand">London</NuxtLink></li>
                     <li class="my-4"><NuxtLink to="/" class="transition duration-100 cursor-pointer leading-normal text-gd-neutral-dark hover:text-brand">Houston</NuxtLink></li>
                </ul>
                <ul class="w-1/2 lg:w-1/3 p-6 lg:p-0">
-                   <li class="text-brand sans-medium uppercase">Services</li>
+                   <li class="text-brand font-sans uppercase">Services</li>
                    <li class="my-4"><NuxtLink to="/" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Executive Search</NuxtLink></li>
                     <li class="my-4"><NuxtLink to="/" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Chair and Non-Executive Director Search</NuxtLink></li>
                     <li class="my-4"><NuxtLink to="/" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Succession Planning and Internal Candidat Assessment - CEO and Other Executives</NuxtLink></li>
@@ -39,7 +39,7 @@
                     <li class="my-4"><NuxtLink to="/" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Remuneration Design and Governance</NuxtLink></li>
                </ul>
                <ul class="w-1/2 lg:w-1/4 p-6 lg:p-0">
-                   <li class="text-brand sans-medium uppercase">Sector Expertise</li>
+                   <li class="text-brand font-sans uppercase">Sector Expertise</li>
                    <li class="my-4"><NuxtLink to="/" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Mining & Metals</NuxtLink></li>
                     <li class="my-4"><NuxtLink to="/" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Energy, Oil & Gas</NuxtLink></li>
                     <li class="my-4"><NuxtLink to="/" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Infrastructure</NuxtLink></li>

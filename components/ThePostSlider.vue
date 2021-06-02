@@ -6,73 +6,24 @@
                 <vue-tiny-slider v-bind="tinySliderOptions" id="post" class="flex">
                     <div v-for="post in posts" :key="post.id" class="w-1/2 h-80 p-2">
                         <NuxtLink :to="post.link" class="group slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">{{post.title}}</h3>
+                            <div class="relative z-10">
+                            <h3 class="font-serif text-white text-2xl">{{post.title}}</h3>
+                              <NuxtLink to="/" class="mt-2 text-brand text-sm flex items-center justify-start">
+                                   <p>Read more</p>
+                                    <svg class="ml-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.72727 4.13559L8.09486 4.8226C7.96838 5.00339 7.96838 5.29266 8.09486 5.43729L13.8182 11.9819L8.09486 18.5627C7.96838 18.7073 7.96838 18.9966 8.09486 19.1774L8.72727 19.8644C8.88538 20.0452 9.10672 20.0452 9.26482 19.8644L15.9051 12.3073C16.0316 12.1266 16.0316 11.8734 15.9051 11.6927L9.26482 4.13559C9.10672 3.9548 8.88538 3.9548 8.72727 4.13559Z" fill="currentColor"/>
+                                    </svg>
+                                </NuxtLink>
+
+                            </div>
                             <img :src="require(`~/assets/images/${post.image}`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
+                            <div class="w-full h-full overlay-card absolute inset-0 z-0"></div>
                         </NuxtLink>
                     </div>
-                    <!-- <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">How to prepare for your first CFO role</h3>
-                            <img :src="require(`~/assets/images/post2.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
+           
                     <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Helping to smooth the transition into new executive roles</h3>
-                            <img :src="require(`~/assets/images/post3.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Gerard Daniels celebrates a significant milestone this month</h3>
-                            <img :src="require(`~/assets/images/post4.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Building the talent pool for 2021</h3>
-                            <img :src="require(`~/assets/images/post5.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Helping to smooth the transition into new executive roles</h3>
-                            <img :src="require(`~/assets/images/post1.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">How to prepare for your first CFO role</h3>
-                            <img :src="require(`~/assets/images/post2.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Future-proofing remuneration strategies in the mining sector</h3>
-                            <img :src="require(`~/assets/images/post3.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div>
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-box drag-none">
-                            <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Building the talent pool for 2021</h3>
-                            <img :src="require(`~/assets/images/post4.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
-                        </NuxtLink>
-                    </div> -->
-                    <div class="w-1/2 h-80 p-2">
-                        <NuxtLink to="/" class="slider-boxs bg-white drag-none">
-                            <!-- <h3 class="relative z-10 font-sans text-white text-sm tracking-wider">Executive Search</h3>
-                            <img :src="require(`~/assets/images/post3.jpg`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
-                            <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div> -->
-                        </NuxtLink>
+                        <div class="slider-boxs bg-white drag-none">
+                        </div>
                     </div>
                     
                 </vue-tiny-slider>
@@ -80,7 +31,7 @@
                     <ul id="post-controls" class="post-controls col-start-1 flex items-center px-2">
                         <li><BtnArrowLeft/></li>
                         <li><BtnArrowRight/></li>
-                        <!-- <li class="transition duration-200 flex-shrink-0 mr-1 button-control bg-gd-yellow-light hover:bg-gd-yellow text-gd-neutral-dark text-opacity-30 hover:text-opacity-100 prev">
+                        <!-- GRADIENT 0, 35 <li class="transition duration-200 flex-shrink-0 mr-1 button-control bg-gd-yellow-light hover:bg-gd-yellow text-gd-neutral-dark text-opacity-30 hover:text-opacity-100 prev">
                             <svg class="w-4 h-4" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.875 0.828125L11.8125 1.71875C12 1.95312 12 2.32812 11.8125 2.51562L3.32812 11L11.8125 19.5312C12 19.7188 12 20.0938 11.8125 20.3281L10.875 21.2188C10.6406 21.4531 10.3125 21.4531 10.0781 21.2188L0.234375 11.4219C0.046875 11.1875 0.046875 10.8594 0.234375 10.625L10.0781 0.828125C10.3125 0.59375 10.6406 0.59375 10.875 0.828125Z" fill="currentColor"/>
                             </svg>
@@ -179,13 +130,7 @@ export default {
 </script>
 
 <style>
-/* #post {
-    transform: translate3d(7.14286%, 0px, 0px)!important;
-} */
 
-.slider-box {
-    @apply relative p-8 rounded-lg transform transition duration-200 flex items-end justify-start w-full h-full overflow-hidden hover:-translate-y-2 hover:shadow-xl uppercase;
-}
 .button-control {
     @apply cursor-pointer w-10 h-10 rounded-md flex items-center justify-center;
 }

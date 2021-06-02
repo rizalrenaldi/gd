@@ -27,7 +27,7 @@
          font-style: normal;
   }
 @font-face {
-    font-family: signifier;
+    font-family: 'signifier';
     src: url('/fonts/test-signifier-regular.woff') format('woff');
          font-weight: 400;
          font-display: swap;
