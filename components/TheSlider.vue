@@ -48,47 +48,47 @@ export default {
             services: [
                 {
                     "title": "Executive Search",
-                    "image": "service1.jpg",
+                    "image": "service1-executive.jpg",
                     "link": "/" 
                 },
                 {
                     "title": "Chair and Non-Executive Director Search",
-                    "image": "service2.jpg",
+                    "image": "service2-chair.jpg",
                     "link": "/" 
                 },
                 {
                     "title": "Market Mapping and Talent Identification",
-                    "image": "service3.jpg",
+                    "image": "service3-market.jpg",
                     "link": "/" 
                 },
                 {
                     "title": "Executive Performance Assessment",
-                    "image": "service1.jpg",
+                    "image": "service4-executive.jpg",
                     "link": "/" 
                 },
                 {
                     "title": "Succession Planning and Internal Candidate Assessment – CEOs and Other Executives",
-                    "image": "service2.jpg",
+                    "image": "service5-succession.jpg",
                     "link": "/" 
                 },
                 {
                     "title": "Board Assessment and Composition",
-                    "image": "service3.jpg",
+                    "image": "service6-board.jpg",
                     "link": "/" 
                 },
                 {
                     "title": "Talent and Organisational Structure Design",
-                    "image": "service1.jpg",
+                    "image": "service7-talent.jpg",
                     "link": "/" 
                 },
                 {
                     "title": "Remuneration Design and Governance",
-                    "image": "service2.jpg",
+                    "image": "service8-remuneration.jpg",
                     "link": "/" 
                 },
                 {
                     "title": "Workforce Planning",
-                    "image": "service3.jpg",
+                    "image": "service9-workforce.jpg",
                     "link": "/" 
                 },
             ],

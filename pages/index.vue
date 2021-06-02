@@ -27,7 +27,7 @@
       <div data-aos="fade-up" data-aos-duration="1200" data-aos-offset="300" class="grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12">
         <div class="px-6 md:px-0 col-start-1 col-span-full md:col-start-2 md:col-span-6 lg:col-start-3 my-32">
           <h2 class="font-serif-light text-4xl mb-4 text-brand">"Although we had always operated internationally out of Perth, in the early 2000s it became clear that there was opportunity beyond the Asia Pacific region"</h2>
-          <p class="font-sans text-gd-neutral-light">Michael and Lloyd, Founders & Directors</p>
+          <p class="font-sans text-gd-neutral-dark">Michael and Lloyd, Founders & Directors</p>
         </div>
       </div>
 
