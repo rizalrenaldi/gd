@@ -5,7 +5,7 @@
             <client-only>
                 <vue-tiny-slider v-bind="tinySliderOptions" id="services" class="flex">
                     <div v-for="service in services" :key="service.id" class="w-1/2 h-80 p-2">
-                        <NuxtLink :to="service.link" class="group slider-box drag-none">
+                        <NuxtLink :to="service.link" class="backface group slider-box drag-none">
                             <h3 class="relative z-10 font-sans text-white uppercase text-sm tracking-wider">{{service.title}}</h3>
                             <img :src="require(`~/assets/images/${service.image}`)" alt="service" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center">
                             <div class="w-full h-full overlay-card absolute inset-0 z-0"></div>

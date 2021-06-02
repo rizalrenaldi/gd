@@ -68,6 +68,10 @@ body {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
 }
 
+.backface {
+    -webkit-backface-visibility: hidden;
+  }
+
 .swirl-header {
     width: 120%;
     opacity: 40%;

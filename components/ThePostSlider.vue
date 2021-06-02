@@ -5,7 +5,7 @@
             <client-only>
                 <vue-tiny-slider v-bind="tinySliderOptions" id="post" class="flex">
                     <div v-for="post in posts" :key="post.id" class="w-1/2 h-80 p-2">
-                        <NuxtLink :to="post.link" class="group slider-box drag-none">
+                        <NuxtLink :to="post.link" class="backface group slider-box drag-none">
                             <div class="relative z-10">
                             <h3 class="font-serif text-white text-2xl">{{post.title}}</h3>
                               <NuxtLink to="/" class="mt-2 text-brand text-sm flex items-center justify-start">
