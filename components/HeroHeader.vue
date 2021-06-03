@@ -10,7 +10,7 @@
     <div class="w-screen h-full group relative flex items-end overflow-hiddens drag-none">
         <div class="h-full grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12 relative z-20">
         <VImg v-if="slider.image" :src="slider.image" alt="header" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center" />
-        <div v-if="slider.video" class="videoWrapper">
+         <div v-if="slider.video" class="videoWrapper">
             <video loop autoplay muted playsinline>
                     <source :src="require(`~/assets/images/${slider.video}`)" type="video/mp4">
                 </video>
@@ -118,7 +118,7 @@
                 "items": 1,
                 "mouseDrag": true,
                 "nav": false,
-                "autoplay": false,
+                "autoplay": true,
                 "autoplayTimeout": 6000,
                 "speed": 800,
                 "autoplayButtonOutput": false
@@ -147,8 +147,8 @@
 
 .videoWrapper video {
   left: 50%;
-  min-height: 100%;
-  min-width: 150vh;
+  min-height: 100vh;
+  min-width: 150vw;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -157,8 +157,7 @@
 
 @screen lg {
     .videoWrapper video {
-  min-width: 100vh!important;
-
+        min-width: 100vw!important;
     }
 }
 </style>
