@@ -9,6 +9,13 @@
 <div v-for="slider in content" :key="slider.id" class="w-screen header-hero relative overflow-hidden">
     <div class="w-screen h-full group relative flex items-end overflow-hiddens drag-none">
         <div class="h-full grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12 relative z-20">
+        <VImg v-if="slider.image" :src="slider.image" alt="header" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center" />
+        <div v-if="slider.video" class="videoWrapper">
+            <video loop autoplay muted playsinline>
+                    <source :src="require(`~/assets/images/${slider.video}`)" type="video/mp4">
+                </video>
+        </div>
+        <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
     <Swirl/>
             <div v-if="slider.contentAlign === 'left'" class="pr-8 col-start-2 col-span-full md:col-start-2 md:col-span-7 lg:col-start-3 lg:col-span-5 h-full relative z-10 text-white">
                <div class="h-full flex flex-col justify-center">
@@ -38,13 +45,7 @@
             </div>
 
         </div>
-         <VImg v-if="slider.image" :src="slider.image" alt="header" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center" />
-         <div v-if="slider.video" class="videoWrapper">
-            <video loop autoplay muted playsinline>
-                    <source :src="require(`~/assets/images/${slider.video}`)" type="video/mp4">
-                </video>
-        </div>
-        <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
+       
     </div>
 </div>
         
@@ -88,7 +89,7 @@
                     "description": "Gerard Daniels searches for executive game breakers whilst keeping an eye on emerging leaders.",
                     "button": "Learn more",
                     "link": "/",
-                    "image": "header.png",
+                    "image": "hero-image1.jpg",
                     "contentAlign": "right"
 
                 },
@@ -106,7 +107,7 @@
                     "description": "Gerard Daniels, sees great value in supporting and connecting regularly with hiring managers and placed candidates throughout the all-important first year on the job (and beyond).",
                     "button": "Read more",
                     "link": "/",
-                    "image": "featured-post.jpg",
+                    "image": "hero-image3.jpg",
                     "contentAlign": "right"
 
                 }

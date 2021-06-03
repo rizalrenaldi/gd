@@ -50,10 +50,10 @@
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Energy, Oil & Gas</NuxtLink></li>
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Infrastructure</NuxtLink></li>
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Industrial</NuxtLink></li>
-              <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Aerospace & Defence</NuxtLink></li>
-              <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Education, Social & Government Enterprise</NuxtLink></li>
-              <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Financial Service</NuxtLink></li>
-              <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Healthcare & Life Sciences</NuxtLink></li>
+              <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Financial Services</NuxtLink></li>
+              <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Healthcare</NuxtLink></li>
+              <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Life Sciences, Pharmaceuticals & Biotechnology</NuxtLink></li>
+              <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Co-Operatives and Mutuals</NuxtLink></li>
             </ul>
           </div>
           </transition>
