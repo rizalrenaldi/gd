@@ -198,4 +198,29 @@ blockquote code {
     }
 }
 
+.videoWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;  
+    z-index:0;
+}
+
+.videoWrapper video {
+  left: 50%;
+  min-height: 100vh;
+  min-width: 200vw;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+@screen lg {
+    .videoWrapper video {
+        min-width: 100vw!important;
+    }
+}
+
 

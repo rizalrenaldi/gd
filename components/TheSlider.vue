@@ -1,5 +1,5 @@
 <template>
-<div data-aos="fade-in" data-aos-duration="1200" class="mt-10">
+<div class="mt-10">
     <div class="grid grid-cols-12">
         <div class="col-start-1 lg:col-start-1 col-span-full relative">
             <client-only>

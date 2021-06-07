@@ -12,8 +12,8 @@
         <VImg v-if="slider.image" :src="slider.image" alt="header" class="select-none drag-none absolute bottom-0 absolute-center-x z-0 w-full h-full object-cover object-center" />
          <div v-if="slider.video" class="videoWrapper">
             <video loop autoplay muted playsinline>
-                    <source :src="require(`~/assets/images/${slider.video}`)" type="video/mp4">
-                </video>
+                <source :src="require(`~/assets/images/${slider.video}`)" type="video/mp4">
+            </video>
         </div>
         <div class="w-full h-full bg-black bg-opacity-25 absolute inset-0 z-0"></div>
     <Swirl/>
@@ -129,35 +129,5 @@
 </script>
 
 <style>
-/* #hero-iw { width: 100%;} */
 
-/* video {
-    width: 100%;
-    max-height: 100%;
-    box-sizing: border-box;
-} */
-.videoWrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;  
-    z-index:0;
-}
-
-.videoWrapper video {
-  left: 50%;
-  min-height: 100vh;
-  min-width: 150vw;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-}
-
-@screen lg {
-    .videoWrapper video {
-        min-width: 100vw!important;
-    }
-}
 </style>

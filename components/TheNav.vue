@@ -2,7 +2,7 @@
   <nav class="w-full px-8 h-20 flex flex-col lg:flex-row items-start justify-center lg:items-center lg:justify-between border-b relative z-50">
     <!-- <Logo class="md:mr-1/16 lg:mr-1/12"/> -->
     <div class="w-full lg:w-auto flex items-center justify-between">
-      <Logo class="w-56 lg:w-64 lg:flex-shrink-1"/>
+      <NuxtLink to="/"><Logo class="w-56 lg:w-64 lg:flex-shrink-1"/></NuxtLink>
        <div class="flex lg:hidden">
         <svg v-if="!mobileMenuOpen" id="menu-icon" @click="mobileMenuOpen = true" class="transition duration-100 cursor-pointer text-gd-neutral-darker hover:text-brand" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M21.4643 5.68085C21.7321 5.68085 22 5.44149 22 5.10638V3.57447C22 3.28723 21.7321 3 21.4643 3H2.53571C2.22321 3 2 3.28723 2 3.57447V5.10638C2 5.44149 2.22321 5.68085 2.53571 5.68085H21.4643ZM21.4643 13.3404C21.7321 13.3404 22 13.1011 22 12.766V11.234C22 10.9468 21.7321 10.6596 21.4643 10.6596H2.53571C2.22321 10.6596 2 10.9468 2 11.234V12.766C2 13.1011 2.22321 13.3404 2.53571 13.3404H21.4643ZM21.4643 21C21.7321 21 22 20.7606 22 20.4255V18.8936C22 18.6064 21.7321 18.3191 21.4643 18.3191H2.53571C2.22321 18.3191 2 18.6064 2 18.8936V20.4255C2 20.7606 2.22321 21 2.53571 21H21.4643Z" fill="currentColor"/>
@@ -47,7 +47,7 @@
           <div v-if="dropdownSectors" class="dropdown font-sans text-sm px-8 py-4 bg-white rounded-lg shadow-gd absolute z-20">
             <ul class=""> 
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Mining & Metals</NuxtLink></li>
-              <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Energy, Oil & Gas</NuxtLink></li>
+              <li class="my-4"><NuxtLink to="/mining-oil-gas" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Energy, Oil & Gas</NuxtLink></li>
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Infrastructure</NuxtLink></li>
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Industrial</NuxtLink></li>
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Financial Services</NuxtLink></li>
