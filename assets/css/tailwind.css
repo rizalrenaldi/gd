@@ -204,7 +204,7 @@ blockquote code {
     left: 0;
     bottom: 0;
     right: 0;  
-    z-index:0;
+    z-index:-1!important;
 }
 
 .videoWrapper video {
@@ -212,6 +212,7 @@ blockquote code {
   min-height: 100vh;
   min-width: 200vw;
   position: absolute;
+  z-index: -1!important;
   top: 50%;
   transform: translate(-50%, -50%);
 

@@ -118,7 +118,7 @@
                 "items": 1,
                 "mouseDrag": true,
                 "nav": false,
-                "autoplay": true,
+                "autoplay": false,
                 "autoplayTimeout": 6000,
                 "speed": 800,
                 "autoplayButtonOutput": false

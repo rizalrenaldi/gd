@@ -30,9 +30,6 @@
               <li class="my-4"><NuxtLink to="/" @click="dropdownDo = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Chair and Non-Executive Director Search</NuxtLink></li>
               <li class="my-4"><NuxtLink to="/" @click="dropdownDo = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Succession Planning and Internal Candidate Assessment - CEO and Other Executives</NuxtLink></li>
               <li class="my-4"><NuxtLink to="/" @click="dropdownDo = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Market Mapping and Talent Identification</NuxtLink></li>
-              <li class="my-4"><NuxtLink to="/" @click="dropdownDo = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Talent and Organisational Structure Design</NuxtLink></li>
-              <li class="my-4"><NuxtLink to="/" @click="dropdownDo = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Workforce Planning</NuxtLink></li>
-              <li class="my-4"><NuxtLink to="/" @click="dropdownDo = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Remuneration Design and Governance</NuxtLink></li>
             </ul>
           </div>
           </transition>
@@ -47,7 +44,7 @@
           <div v-if="dropdownSectors" class="dropdown font-sans text-sm px-8 py-4 bg-white rounded-lg shadow-gd absolute z-20">
             <ul class=""> 
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Mining & Metals</NuxtLink></li>
-              <li class="my-4"><NuxtLink to="/mining-oil-gas" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Energy, Oil & Gas</NuxtLink></li>
+              <li class="my-4"><NuxtLink to="/mining-oil-gas" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Energy & Renewables</NuxtLink></li>
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Infrastructure</NuxtLink></li>
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Industrial</NuxtLink></li>
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Financial Services</NuxtLink></li>

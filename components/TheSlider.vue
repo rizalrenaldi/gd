@@ -76,21 +76,6 @@ export default {
                     "image": "service6-board.jpg",
                     "link": "/" 
                 },
-                {
-                    "title": "Talent and Organisational Structure Design",
-                    "image": "service7-talent.jpg",
-                    "link": "/" 
-                },
-                {
-                    "title": "Remuneration Design and Governance",
-                    "image": "service8-remuneration.jpg",
-                    "link": "/" 
-                },
-                {
-                    "title": "Workforce Planning",
-                    "image": "service9-workforce.jpg",
-                    "link": "/" 
-                },
             ],
             tinySliderOptions: {
                 "container": "services",
