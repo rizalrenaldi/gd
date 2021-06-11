@@ -44,7 +44,7 @@
           <div v-if="dropdownSectors" class="dropdown font-sans text-sm px-8 py-4 bg-white rounded-lg shadow-gd absolute z-20">
             <ul class=""> 
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Mining & Metals</NuxtLink></li>
-              <li class="my-4"><NuxtLink to="/mining-oil-gas" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Energy & Renewables</NuxtLink></li>
+              <li class="my-4"><NuxtLink to="/energy-and-renewables" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Energy & Renewables</NuxtLink></li>
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Infrastructure</NuxtLink></li>
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Industrial</NuxtLink></li>
               <li class="my-4"><NuxtLink to="/" @click="dropdownSectors = false" class="transition duration-100 cursor-pointer leading-normal hover:text-brand">Financial Services</NuxtLink></li>
