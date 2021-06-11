@@ -24,7 +24,7 @@
     <div class="grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12 overflow-hidden pt-6 md:pt-12 lg:pt-20 relative">
         <div class="px-6 md:px-0 col-start-1 col-span-full md:col-start-4 md:col-span-6 lg:col-start-6 h-full relative z-10 md:pr-8 lg:pr-0">
           <h2 class="font-serif text-3xl mb-6 text-brand">Energy, oil and gas is one of the largest and most lucrative, but also most volatile sectors to work in. It is highly sensitive to political and environmental events, and both demand and prices can fluctuate significantly – without much warning at all.</h2>
-          <p class="font-sans text-lg leading-relaxed mb-4">Gerard Daniels’ specialist team of energy consultants has the experience, industry acumen and global network to help this sector evolve and respond to many challenges.</p>
+
           <p class="font-sans text-lg leading-relaxed mb-4">Oil and gas had a particularly tumultuous time in 2020, with falling demand for oil, supply chain disruption, extreme workforce shortages and a sharp fall in global sector revenue. In 2021 growing industry regulation and the burden of finding new oil and gas reserves to secure future revenue will continue to challenge productivity and performance in the energy sector.</p>
        </div>
     </div>
@@ -37,8 +37,8 @@
                     <img class="absolute inset-0 w-full h-full object-cover object-center" :src="require(`~/assets/images/testimonial-image.jpg`)" alt="">
                  </div>
                 <div class="flex-shrink-1 flex-grow-1 px-4 py-4 lg:py-6">
-                    <h2 class="font-serif-light text-2xl lg:text-3xl mb-4 text-brand">"Although we had always operated internationally out of Perth, in the early 2000s it became clear that there was opportunity beyond the Asia Pacific region"</h2>
-                    <p class="font-sans text-gd-neutral-dark">Michael and Lloyd, Founders & Directors</p>
+                    <h2 class="font-serif-light text-2xl lg:text-3xl mb-4 text-brand">Gerard Daniels’ specialist team of energy consultants has the experience, industry acumen and global network to help this sector evolve and respond to many challenges.</h2>
+                    <!-- <p class="font-sans text-gd-neutral-dark">Michael and Lloyd, Founders & Directors</p> -->
                 </div>
              </div>
       </div>
